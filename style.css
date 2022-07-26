@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.header img{
+
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.wrapper{
+    margin: 1rem;
+}
+
+.main{
+    padding-top: 50px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-text h1{
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-text p{
+    color: rgb(231, 228, 228);
+    line-height: 1.6;
+}
+
+.hero-text a{
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    padding: 13px 50px;
+    margin-top: 50px;
+    border-radius: 26px;
+    box-shadow: 10px 10px 30px -5px rgb(43, 42, 42);
+    transition: all 0.4s;
+}
+
+.hero-text a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social{
+    text-align: right;
+    padding-top: 30px;
+    
+}
+
+.social a{
+    text-decoration: none;
+    
+}
+
+.social a i{
+    color: white;
+    position: relative;
+    font-size: 18px;
+    transition: all 0.4s;
+}
+
+.social a i:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+.social a i:hover::after{
+    border-color: hsl(300, 69%, 71%);
+}
+
+
+.social a:not(:first-child){
+    margin-left: 2rem;
+}
+
+.social a:nth-child(2){
+    margin-left: 2.4rem;
+}
+
+.social a i::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px white solid;
+    border-radius: 100%;
+    left: -15px;
+    bottom: -13px;
+}
